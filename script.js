@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Offset logic for schools very close to Conradie Park to prevent overlap
                 // 0.002 degrees is roughly 200 meters.
-                const latDiff = Math.abs(Latitude - conradiePark[0]);
-                const lngDiff = Math.abs(Longitude - conradiePark[1]);
+                const offsetLatDiff = Math.abs(Latitude - conradiePark[0]);
+                const offsetLngDiff = Math.abs(Longitude - conradiePark[1]);
 
-                if (latDiff < 0.002 && lngDiff < 0.002) {
+                if (offsetLatDiff < 0.002 && offsetLngDiff < 0.002) {
                     // Shift slightly North-East
                     Latitude += 0.002;
                     Longitude += 0.002;
