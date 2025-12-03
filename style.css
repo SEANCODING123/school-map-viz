@@ -1,23 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
     border-radius: 8px;
     box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
-    }
+}
 
-    .custom-popup .leaflet-popup-content {
-        margin: 13px 19px;
-        line-height: 1.4;
-    }
+.custom-popup .leaflet-popup-content {
+    margin: 13px 19px;
+    line-height: 1.4;
+}
 
-    .custom-popup .leaflet-popup-tip {
-        background: #fff;
-    }
+.custom-popup .leaflet-popup-tip {
+    background: #fff;
+}
 
-    /* Style for the permanent school labels */
-    .school-label {
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        font-weight: bold;
-        color: #333;
-        text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-        font-size: 12px;
-    }
+/* Style for the permanent school labels */
+.school-label {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 12px;
+}
