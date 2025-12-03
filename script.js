@@ -91,13 +91,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
 
-                // Add permanent label
-                marker.bindTooltip(School_Name, {
-                    permanent: true,
-                    direction: labelDirection,
-                    className: 'school-label',
-                    offset: labelOffset
-                });
+
+                // Only show permanent labels for schools with 3+ students
+                // Smaller schools will show labels on hover only
+                if (Students >= 3) {
+                    marker.bindTooltip(School_Name, {
+                        permanent: true,
+                        direction: labelDirection,
+                        className: 'school-label',
+                        offset: labelOffset
+                    });
+                } else {
+                    // Hover-only label for schools with 1-2 students
+                    marker.bindTooltip(School_Name, {
+                        permanent: false,
+                        direction: labelDirection,
+                        className: 'school-label',
+                        offset: labelOffset
+                    });
+                }
             });
         })
         .catch(error => console.error('Error loading school data:', error));
