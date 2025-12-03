@@ -1,0 +1,263 @@
+[
+  {
+    "School_Name": "Thornton Primary School",
+    "Students": 9,
+    "Latitude": -33.97,
+    "Longitude": 18.51,
+    "Distance_KM": 5.34,
+    "Travel_Time_Min": 10.7,
+    "Address": "23 Manatoka Road, Thornton, Cape Town, 7460"
+  },
+  {
+    "School_Name": "Windermere Primary School",
+    "Students": 4,
+    "Latitude": -33.935,
+    "Longitude": 18.518,
+    "Distance_KM": 1.38,
+    "Travel_Time_Min": 2.8,
+    "Address": "71 Tenth Avenue, Kensington, Cape Town, 7405"
+  },
+  {
+    "School_Name": "Kenmere Primary School",
+    "Students": 3,
+    "Latitude": -33.934,
+    "Longitude": 18.517,
+    "Distance_KM": 1.29,
+    "Travel_Time_Min": 2.6,
+    "Address": "Tenth Avenue, Kensington, Cape Town, 7405"
+  },
+  {
+    "School_Name": "Zonnebloem Girls Primary School",
+    "Students": 3,
+    "Latitude": -33.932,
+    "Longitude": 18.435,
+    "Distance_KM": 8.02,
+    "Travel_Time_Min": 16,
+    "Address": "Zonnebloem, Cape Town, 8001"
+  },
+  {
+    "School_Name": "Kensington Primary School",
+    "Students": 2,
+    "Latitude": -33.9345,
+    "Longitude": 18.5175,
+    "Distance_KM": 1.33,
+    "Travel_Time_Min": 2.7,
+    "Address": "Kensington, Cape Town, 7405"
+  },
+  {
+    "School_Name": "Panda Bear Day Care",
+    "Students": 2,
+    "Latitude": -33.93,
+    "Longitude": 18.51,
+    "Distance_KM": 1.3,
+    "Travel_Time_Min": 2.6,
+    "Address": "Pinelands area, Cape Town"
+  },
+  {
+    "School_Name": "Pinelands Primary School",
+    "Students": 2,
+    "Latitude": -33.935,
+    "Longitude": 18.505,
+    "Distance_KM": 2.01,
+    "Travel_Time_Min": 4,
+    "Address": "Pinelands, Cape Town, 7405"
+  },
+  {
+    "School_Name": "Watersprite",
+    "Students": 2,
+    "Latitude": -33.934,
+    "Longitude": 18.515,
+    "Distance_KM": 1.36,
+    "Travel_Time_Min": 2.7,
+    "Address": "Kensington, Cape Town"
+  },
+  {
+    "School_Name": "Little Conradie Academy",
+    "Students": 2,
+    "Latitude": -33.923,
+    "Longitude": 18.521,
+    "Distance_KM": 0.02,
+    "Travel_Time_Min": 0,
+    "Address": "Conradie Park, Pinelands, Cape Town"
+  },
+  {
+    "School_Name": "Vreelslust Primary School",
+    "Students": 1,
+    "Latitude": -33.905,
+    "Longitude": 18.58,
+    "Distance_KM": 5.78,
+    "Travel_Time_Min": 11.6,
+    "Address": "Elsies River, Cape Town, 7490"
+  },
+  {
+    "School_Name": "Woodbridge Primary School",
+    "Students": 1,
+    "Latitude": -33.858,
+    "Longitude": 18.49,
+    "Distance_KM": 7.77,
+    "Travel_Time_Min": 15.5,
+    "Address": "Woodbridge Island, Cape Town"
+  },
+  {
+    "School_Name": "Rahmaniyeh Primary School",
+    "Students": 1,
+    "Latitude": -33.96,
+    "Longitude": 18.52,
+    "Distance_KM": 4.13,
+    "Travel_Time_Min": 8.3,
+    "Address": "Athlone, Cape Town"
+  },
+  {
+    "School_Name": "Bellville Primary School",
+    "Students": 1,
+    "Latitude": -33.9,
+    "Longitude": 18.63,
+    "Distance_KM": 10.36,
+    "Travel_Time_Min": 20.7,
+    "Address": "Bellville, Cape Town, 7530"
+  },
+  {
+    "School_Name": "Factreton Primary School",
+    "Students": 1,
+    "Latitude": -33.95,
+    "Longitude": 18.53,
+    "Distance_KM": 3.12,
+    "Travel_Time_Min": 6.2,
+    "Address": "Factreton, Cape Town"
+  },
+  {
+    "School_Name": "Vanguard Primary School",
+    "Students": 1,
+    "Latitude": -33.955,
+    "Longitude": 18.54,
+    "Distance_KM": 3.97,
+    "Travel_Time_Min": 7.9,
+    "Address": "Bonteheuwel, Cape Town"
+  },
+  {
+    "School_Name": "Athlone Pre-Primary School",
+    "Students": 1,
+    "Latitude": -33.965,
+    "Longitude": 18.515,
+    "Distance_KM": 4.72,
+    "Travel_Time_Min": 9.4,
+    "Address": "Athlone, Cape Town"
+  },
+  {
+    "School_Name": "Acacia Park Primary School",
+    "Students": 1,
+    "Latitude": -33.936,
+    "Longitude": 18.516,
+    "Distance_KM": 1.53,
+    "Travel_Time_Min": 3.1,
+    "Address": "Kensington, Cape Town"
+  },
+  {
+    "School_Name": "Rosebank Primary School",
+    "Students": 1,
+    "Latitude": -33.968,
+    "Longitude": 18.461,
+    "Distance_KM": 7.48,
+    "Travel_Time_Min": 15,
+    "Address": "Rosebank, Cape Town, 7700"
+  },
+  {
+    "School_Name": "Wavecrest Primary School",
+    "Students": 1,
+    "Latitude": -34.01,
+    "Longitude": 18.69,
+    "Distance_KM": 18.33,
+    "Travel_Time_Min": 36.7,
+    "Address": "Wavecrest, Cape Town"
+  },
+  {
+    "School_Name": "JG Meiring High School",
+    "Students": 1,
+    "Latitude": -34.045,
+    "Longitude": 18.615,
+    "Distance_KM": 16.1,
+    "Travel_Time_Min": 32.2,
+    "Address": "Mitchells Plain, Cape Town"
+  },
+  {
+    "School_Name": "Curro Century City",
+    "Students": 1,
+    "Latitude": -33.89,
+    "Longitude": 18.52,
+    "Distance_KM": 3.66,
+    "Travel_Time_Min": 7.3,
+    "Address": "Century City, Cape Town"
+  },
+  {
+    "School_Name": "Queenspark High School",
+    "Students": 1,
+    "Latitude": -33.952,
+    "Longitude": 18.473,
+    "Distance_KM": 5.5,
+    "Travel_Time_Min": 11,
+    "Address": "Mowbray, Cape Town, 7700"
+  },
+  {
+    "School_Name": "Mountain Road Primary School",
+    "Students": 1,
+    "Latitude": -33.935,
+    "Longitude": 18.45,
+    "Distance_KM": 6.71,
+    "Travel_Time_Min": 13.4,
+    "Address": "Salt River, Cape Town"
+  },
+  {
+    "School_Name": "Belporto Primary School",
+    "Students": 1,
+    "Latitude": -33.91,
+    "Longitude": 18.59,
+    "Distance_KM": 6.51,
+    "Travel_Time_Min": 13,
+    "Address": "Parow, Cape Town"
+  },
+  {
+    "School_Name": "Sea Point Primary School",
+    "Students": 1,
+    "Latitude": -33.92,
+    "Longitude": 18.382,
+    "Distance_KM": 12.85,
+    "Travel_Time_Min": 25.7,
+    "Address": "Sea Point, Cape Town, 8005"
+  },
+  {
+    "School_Name": "Florida High School",
+    "Students": 1,
+    "Latitude": -33.968,
+    "Longitude": 18.535,
+    "Distance_KM": 5.17,
+    "Travel_Time_Min": 10.3,
+    "Address": "Florida, Cape Town"
+  },
+  {
+    "School_Name": "Mitchells Plain Primary School",
+    "Students": 1,
+    "Latitude": -34.05,
+    "Longitude": 18.62,
+    "Distance_KM": 16.81,
+    "Travel_Time_Min": 33.6,
+    "Address": "Mitchells Plain, Cape Town"
+  },
+  {
+    "School_Name": "Panda Day Care Centre",
+    "Students": 1,
+    "Latitude": -33.93,
+    "Longitude": 18.51,
+    "Distance_KM": 1.3,
+    "Travel_Time_Min": 2.6,
+    "Address": "Pinelands area, Cape Town"
+  },
+  {
+    "School_Name": "Blossom Primary School",
+    "Students": 1,
+    "Latitude": -33.935,
+    "Longitude": 18.445,
+    "Distance_KM": 7.16,
+    "Travel_Time_Min": 14.3,
+    "Address": "Woodstock, Cape Town"
+  }
+]
