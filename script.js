@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the map
     const map = L.map('map').setView(conradiePark, 12);
 
-    // Add CartoDB Positron tiles (Cleaner, less detailed)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    // Add CartoDB Light Nolabels tiles (Ultra-minimal, no roads or labels)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 19
@@ -23,8 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     L.marker(conradiePark, { icon: centralIcon }).addTo(map)
-        .bindPopup('<b>Conradie Park</b><br>Central Location')
-        .openPopup();
+        .bindPopup('<b>Conradie Park</b>');
 
     // Fetch and display school data
     fetch('schools.json')
@@ -66,16 +65,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 marker.bindPopup(popupContent);
 
-                // Determine label direction based on position relative to Conradie Park
-                // If East -> Right, If West -> Left
-                const labelDirection = (Longitude > conradiePark[1]) ? 'right' : 'left';
+                // Smart 4-direction label positioning based on quadrant
+                const latDiff = Latitude - conradiePark[0];
+                const lngDiff = Longitude - conradiePark[1];
+
+                let labelDirection, labelOffset;
+
+                if (Math.abs(latDiff) > Math.abs(lngDiff)) {
+                    // Vertical positioning dominant
+                    if (latDiff > 0) {
+                        labelDirection = 'bottom';  // School is North
+                        labelOffset = [0, radius + 5];
+                    } else {
+                        labelDirection = 'top';     // School is South
+                        labelOffset = [0, -(radius + 5)];
+                    }
+                } else {
+                    // Horizontal positioning dominant
+                    if (lngDiff > 0) {
+                        labelDirection = 'right';   // School is East
+                        labelOffset = [radius + 5, 0];
+                    } else {
+                        labelDirection = 'left';    // School is West
+                        labelOffset = [-(radius + 5), 0];
+                    }
+                }
 
                 // Add permanent label
                 marker.bindTooltip(School_Name, {
                     permanent: true,
                     direction: labelDirection,
                     className: 'school-label',
-                    offset: [labelDirection === 'right' ? radius + 2 : -(radius + 2), 0]
+                    offset: labelOffset
                 });
             });
         })
