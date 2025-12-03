@@ -30,21 +30,48 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             data.forEach(school => {
-                const { School_Name, Students, Latitude, Longitude, Distance_KM, Address } = school;
-                
-                // Determine marker size or color based on student count if desired
-                // For now, standard blue markers
-                
-                const marker = L.marker([Latitude, Longitude]).addTo(map);
-                
+                let { School_Name, Students, Latitude, Longitude, Distance_KM, Address } = school;
+
+                // Offset logic for schools very close to Conradie Park to prevent overlap
+                // 0.002 degrees is roughly 200 meters.
+                const latDiff = Math.abs(Latitude - conradiePark[0]);
+                const lngDiff = Math.abs(Longitude - conradiePark[1]);
+
+                if (latDiff < 0.002 && lngDiff < 0.002) {
+                    // Shift slightly North-East
+                    Latitude += 0.002;
+                    Longitude += 0.002;
+                }
+
+                // Calculate radius based on students
+                // Minimum radius of 5, scaling up with square root of students
+                const radius = Math.max(6, Math.sqrt(Students) * 3);
+
+                const marker = L.circleMarker([Latitude, Longitude], {
+                    radius: radius,
+                    fillColor: "#3388ff",
+                    color: "#fff",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map);
+
                 const popupContent = `
                     <b>${School_Name}</b><br>
                     Students: ${Students}<br>
                     Distance: ${Distance_KM} km<br>
                     Address: ${Address}
                 `;
-                
+
                 marker.bindPopup(popupContent);
+
+                // Add permanent label
+                marker.bindTooltip(School_Name, {
+                    permanent: true,
+                    direction: 'right',
+                    className: 'school-label',
+                    offset: [radius + 2, 0]
+                });
             });
         })
         .catch(error => console.error('Error loading school data:', error));

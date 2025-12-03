@@ -13,7 +13,7 @@ body {
     color: #333;
     font-size: 14px;
     border-radius: 8px;
-    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
 }
 
 .custom-popup .leaflet-popup-content {
@@ -23,4 +23,15 @@ body {
 
 .custom-popup .leaflet-popup-tip {
     background: #fff;
+}
+
+/* Style for the permanent school labels */
+.school-label {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 12px;
 }
