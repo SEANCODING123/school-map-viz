@@ -75,19 +75,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Vertical positioning dominant
                     if (latDiff > 0) {
                         labelDirection = 'bottom';  // School is North
-                        labelOffset = [0, radius + 5];
+                        labelOffset = [0, radius + 10];
                     } else {
                         labelDirection = 'top';     // School is South
-                        labelOffset = [0, -(radius + 5)];
+                        labelOffset = [0, -(radius + 10)];
                     }
                 } else {
                     // Horizontal positioning dominant
                     if (lngDiff > 0) {
                         labelDirection = 'right';   // School is East
-                        labelOffset = [radius + 5, 0];
+                        labelOffset = [radius + 10, 0];
                     } else {
                         labelDirection = 'left';    // School is West
-                        labelOffset = [-(radius + 5), 0];
+                        labelOffset = [-(radius + 10), 0];
                     }
                 }
 
